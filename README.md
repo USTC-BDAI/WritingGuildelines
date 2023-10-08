@@ -78,6 +78,23 @@
 ```
 注意，因为公式不带编号了，所以没有办法进行引用，自然就没有 \label{...} 了
 
+- 单行数学公式的标点符号问题：
+  - 如果包含公式的这句话已经结束了，那么在尾部使用句号，如：
+  ```latex
+  The diffusion equation is
+  \begin{equation*}
+    \partial_{t} u = \partial_{xx} u.
+  \end{equation*}
+  ```
+  - 如果包含公式的这句话没有结束，需要进行补充说明，那么在尾部使用逗号，如：
+  ```latex
+  The diffusion equation is
+  \begin{equation*}
+    \partial_{t} u = D \partial_{xx} u,
+  \end{equation*}
+  where $D$ is the diffusion coefficient.
+  ```
+
 #### 多行公式
 
 #### 自定义命令
